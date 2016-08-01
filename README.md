@@ -1,5 +1,5 @@
 # Flappy Term
-Hack-A-Week 4: Ascii Flappy Bird clone inspired by Flappy Bird.
+Hack-A-Week 4: ASCII Flappy Bird clone inspired by Flappy Bird.
 
 ### Features:
 - Now with color!
