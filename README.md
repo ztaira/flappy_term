@@ -6,7 +6,7 @@ Hack-A-Week 4: Ascii Flappy Bird clone inspired by Flappy Bird.
 - Parallax background
 
 ### What it does:
-- It's an ASCII flappy bird knockoff. It lets you play flappy bird.
+- Lets you play flappy bird.
 - Checks for collisions between the bird/pipes and bird/boundary
 - Changes gameplay based on the size of your terminal window
 - Uses ncurses library to render text and color
