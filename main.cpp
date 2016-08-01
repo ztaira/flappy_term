@@ -40,7 +40,7 @@ int main()
     // create a bird instance
     // draw them all
     werase(stdscr);
-    bird mybird = bird(20, 20, win_height, win_width);
+    bird mybird = bird(win_height/2, 15, win_height, win_width);
     pipe mypipe  = pipe(10, win_width-12, win_height, win_width);
     vector<cloud> cloudvector;
     for (int i=0; i<win_width; i+=30)
