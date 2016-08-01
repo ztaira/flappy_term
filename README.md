@@ -21,6 +21,15 @@ Hack-A-Week 4: Ascii Flappy Bird clone inspired by Flappy Bird.
 
 ### Opening Screen:
 
+![alt text][outputimage]
+[outputimage]: https://github.com/ztaira14/flappy_term/blob/master/diagrams/openingscreen.png "Opening Screen"
+
 ### Gamplay:
 
+![alt text][outputimage2]
+[outputimage2]: https://github.com/ztaira14/flappy_term/blob/master/diagrams/gameplay.png "Gameplay"
+
 ### Closing Screen:
+
+![alt text][outputimage3]
+[outputimage3]: https://github.com/ztaira14/flappy_term/blob/master/diagrams/closingscreen.png "Closing Screen"
