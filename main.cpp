@@ -30,7 +30,7 @@ int main()
     init_pair(1, COLOR_WHITE, COLOR_BLACK);
     init_pair(2, COLOR_GREEN, COLOR_BLACK);
     init_pair(3, COLOR_YELLOW, COLOR_BLACK);
-    init_pair(4, COLOR_YELLOW, COLOR_BLACK);
+    init_pair(4, COLOR_WHITE, COLOR_BLACK);
     // print the opening screen, which won't go away until a key is pressed
     attron(COLOR_PAIR(4));
     open_screen(win_height/2, win_width/2);
@@ -96,7 +96,9 @@ int main()
         }
     }
     werase(stdscr);
+    attron(COLOR_PAIR(4));
     lose_screen(win_height/2, win_width/2);
+    attroff(COLOR_PAIR(4));
     refresh();
     while((ch = getch())!='q')
     {
