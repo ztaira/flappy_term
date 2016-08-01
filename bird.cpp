@@ -46,6 +46,4 @@ void bird::move(bool direction)
     {
         ul_y += 1;
     }
-    draw(1);
-    refresh();
 }

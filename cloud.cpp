@@ -53,6 +53,4 @@ void cloud::move()
     {
         ul_x = win_width-37;
     }
-    draw(1);
-    refresh();
 }

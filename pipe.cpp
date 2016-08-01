@@ -29,11 +29,11 @@ void pipe::draw(bool flag)
         mvprintw(ul_y+17, ul_x,".---------.");
         for (int i=ul_y-3; i>=0; --i)
         {
-            mvprintw(i, ul_x, " |||     | ");
+            mvprintw(i, ul_x+1, "|||     |");
         }
         for (int i=ul_y+18; i<win_height; ++i)
         {
-            mvprintw(i, ul_x, " |||     | ");
+            mvprintw(i, ul_x+1, "|||     |");
         }
     }
     else
@@ -46,11 +46,11 @@ void pipe::draw(bool flag)
         mvprintw(ul_y+17, ul_x,"           ");
         for (int i=ul_y-3; i>=0; --i)
         {
-            mvprintw(i, ul_x, "           ");
+            mvprintw(i, ul_x+1, "         ");
         }
         for (int i=ul_y+18; i<win_height; ++i)
         {
-            mvprintw(i, ul_x, "           ");
+            mvprintw(i, ul_x+1, "         ");
         }
     }
 }
@@ -64,6 +64,4 @@ void pipe::move()
         ul_y = ( rand() % ( win_height - 22 ))+4;
         ul_x = win_width-11;
     }
-    draw(1);
-    refresh();
 }
