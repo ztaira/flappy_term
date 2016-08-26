@@ -1,6 +1,10 @@
 # Flappy Term
 Hack-A-Week 4: ASCII Flappy Bird clone inspired by Flappy Bird.
 
+### Usage:
+- Executable is named 'flappy\_term' by default (see makefile)
+- To run, execute it as follows from the flappy\_term directory:
+
 ### Features:
 - Now with color!
 - Parallax background
