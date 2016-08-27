@@ -20,8 +20,20 @@ Hack-A-Week 4: ASCII Flappy Bird clone inspired by Flappy Bird.
 ### What it doesn't do:
 - It does everything I wanted to try. (Parallax, color, design)
 
-### Reasons for not doing things:
-- N/A
+### Included Files:
+```
+- README.md..................This readme file
+- bird.cpp...................Bird class file
+- bird.h.....................Bird header file
+- cloud.cpp..................Cloud class file
+- cloud.h....................Cloud header file
+- diagrams...................Reference images and diagrams
+- flappy_term................Example executable file
+- main.cpp...................Main file
+- makefile...................Makefile
+- pipe.cpp...................Pipe class file
+- pipe.h.....................Pipe header file
+```
 
 ### Example Gameplay:
 
