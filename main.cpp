@@ -8,13 +8,14 @@
 using namespace std;
 
 int collision(pipe *obj1, bird *obj2);
-void lose_screen(int y, int x);
+void lose_screen(int y, int x, int score);
 void open_screen(int y, int x);
 void reset_screen(int wheight, int wwidth);
 
 int main()
 {   
     int ch, win_height, win_width;
+    int score = 0;
     bool bird_dir = false;
     // create a screen
     // get the screen's height and width
@@ -94,10 +95,12 @@ int main()
         {
             break;
         }
+        score++;
+        mvprintw(1, 1, "Score: %d", score);
     }
     werase(stdscr);
     attron(COLOR_PAIR(4));
-    lose_screen(win_height/2, win_width/2);
+    lose_screen(win_height/2, win_width/2, score);
     attroff(COLOR_PAIR(4));
     refresh();
     while((ch = getch())!='q')
@@ -139,11 +142,12 @@ int collision(pipe *obj1, bird *obj2)
     return 0;
 }
 
-void lose_screen(int y, int x)
+void lose_screen(int y, int x, int score)
 {
     mvprintw(y-2, x-4, "YOU LOSE");
     mvprintw(y, x-23, "Sorry, Bird Mario. Today just wasn't your day.");
-    mvprintw(y+2, x-7, "Press q to exit");
+    mvprintw(y+2, x-4, "Score: %d", score);
+    mvprintw(y+4, x-7, "Press q to exit");
 }
 
 void open_screen(int y, int x)
