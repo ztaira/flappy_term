@@ -17,9 +17,6 @@ Hack-A-Week 4: ASCII Flappy Bird clone inspired by Flappy Bird.
 - Changes gameplay based on the size of your terminal window
 - Uses ncurses library to render text and color
 
-### What it doesn't do:
-- It does everything I wanted to try. (Parallax, color, design)
-
 ### Included Files:
 ```
 - README.md..................This readme file
